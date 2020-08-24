@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>
+		ExpressPayErip
+	</name>
+    <settings>
+		<variable>token</variable>
+		<name>Токен (Генерирутся в панели express-pay.by)</name>
+	</settings>
+	<settings>
+		<variable>service_id</variable>
+		<name>Номер услуги (Номер услуги в express-pay.by)</name>
+	</settings>
+    <settings>
+		<variable>handler_url</variable>
+		<name>Адрес для уведомлений</name>
+	</settings> 
+     <settings>
+		<variable>secret_key</variable>
+		<name>Секретное слово для подписи счетов (Задается в панели express-pay.by)</name>
+	</settings> 
+    <settings>
+        <variable>is_use_signature_notify</variable>
+        <name>Использовать цифровую подпись для уведомлений</name>
+        <options>
+            <name></name>
+            <value>true</value>
+        </options>
+    </settings>
+    <settings>
+		<variable>secret_key_norify</variable>
+		<name>Секретное слово для подписи уведомлений (Задается в панели express-pay.by)</name>
+	</settings>
+	<settings>
+		<variable>info</variable>
+		<name>Сообщение, которое будет видеть плательщик при оплате</name>
+	</settings>
+    <settings>
+		<variable>name_editable</variable>
+		<name>Разрешено изменять ФИО плательщика</name>
+        <options>
+			<name></name>
+			<value>true</value>
+		</options>
+	</settings> 
+    <settings>
+		<variable>address_editable</variable>
+		<name>Разрешено изменять адрес плательщика</name>
+        <options>
+			<name></name>
+			<value>true</value>
+		</options>
+	</settings> 
+    <settings>
+		<variable>amount_editable</variable>
+		<name>Разрешено изменять сумму оплаты</name>
+        <options>
+			<name></name>
+            <value>true</value>
+		</options>
+	</settings> 
+    <settings>
+		<variable>send_client_email</variable>
+		<name>Отправлять email-уведомление клиенту</name>
+        <options>
+			<name></name>
+			<value>true</value>
+		</options>
+	</settings> 
+    <settings>
+		<variable>test_mode</variable>
+		<name>Использовать тестовый режим</name>
+        <options>
+			<name></name>
+			<value>true</value>
+		</options>
+	</settings> 
+    <settings>
+		<variable>url_api</variable>
+		<name>Адрес API (https://api.express-pay.by)</name>
+	</settings>
+    <settings>
+		<variable>url_sandbox_api</variable>
+		<name>Адрес тестового API (https://sandbox-api.express-pay.by)</name>
+	</settings>
+</module>
