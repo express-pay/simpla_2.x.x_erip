@@ -25,8 +25,5 @@ class ExpressPayLog{
         $log_url .= '/express-pay-' . date('Y.m.d') . '.log';
 
         file_put_contents($log_url, $type . " - IP - " . $_SERVER['REMOTE_ADDR'] . "; USER AGENT - " . $_SERVER['HTTP_USER_AGENT'] . "; FUNCTION - " . $name . "; MESSAGE - " . $message . ';' . PHP_EOL, FILE_APPEND);
-    
     }
-
-
 }

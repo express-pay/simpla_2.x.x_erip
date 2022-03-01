@@ -25,7 +25,7 @@ class ExpressPayEripView extends View
 		$this->design->assign('pages', $pages);
 		
 		// Создаем основной блок страницы
-		$content = $this->design->fetch('payment/ExpressPayErip/view/erip_invoice.tpl');
+		$content = $this->design->fetch('payment/ExpressPayErip/erip_invoice.tpl');
 				
 		// Передаем основной блок в шаблон
 		$this->design->assign('content', $content);		
