@@ -97,6 +97,7 @@ class ExpressPayErip extends Simpla
         $logs->log_info('checkout_form','getting a secret word; secret_word - '.$secret_word);
 
         $request_params = array(
+            'Token'             => $token,
             'ServiceId'         => $serviceId,
             'AccountNo'         => $accountNo,
             'Amount'            => $amount,
@@ -119,6 +120,7 @@ class ExpressPayErip extends Simpla
             'SmsPhone'          => $sms_phone
         );
         $request_params['Signature'] = ExpressPayHelper::computeSignature($request_params, $secret_word, 'add-web-invoice');
+        unset($request_params['Token']);
         
         $button = '<form method="POST" action="'.$url.'">';
 
