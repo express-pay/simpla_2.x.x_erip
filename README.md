@@ -3,6 +3,8 @@
 
 <a href="https://express-pay.by/cms-extensions/simpla">Инструкция для установки и настройки</a>
 
+<a href="https://www.youtube.com/c/express-pay-by">Наш Youtube канал с опубликованными видео по расширениям</a>
+
 <a href="https://downgit.github.io/#/home?url=https://github.com/express-pay/simpla_2.x.x_erip/tree/master/ExpressPayErip">Скачать ZIP</a>
 
 ## Минимальные требования для установки плагина:
